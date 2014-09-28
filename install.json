@@ -1,0 +1,49 @@
+{
+  "resources": {
+    "head": [
+      {
+        "type": "script",
+        "src": "./eager-livefyre.js"
+      }
+    ],
+    "body": [
+      {
+        "type": "script",
+        "src": "./eager-livefyre-embed.js"
+      },
+      {
+        "type": "script",
+        "contents": "EagerLivefyre.init(Eager.createElement(INSTALL_OPTIONS.location), INSTALL_OPTIONS)"
+      }
+    ]
+  },
+  "options": {
+     "properties": {
+      "siteid": {
+        "title": "Livefyre Site ID",
+        "description": "Get this from your Livefyre admin dashboard (for example, 12345)",
+        "type": "integer"
+      },
+      "articleid": {
+        "title": "Unique article identifier",
+        "description": "Used to uniquely identify a colleciton within your site (for examples, 'First Blog Article')",
+        "type": "integer"
+      },
+      "checksum": {
+        "title": "Collection checksum",
+        "description": "Identifies the current state of collectionmeta found in the admin dashboard by viewing the collection",
+        "type": "string"
+      },
+      "collectionmeta": {
+        "title": "Encoded string with collection info",
+        "description": "Get this from the Livefyre admin dashboard by viewing the collection embed code",
+        "type": "string"
+      },
+      "location": {
+        "title": "Location",
+        "type": "object",
+        "format": "element"
+      }
+    }
+  }
+}
