@@ -27,7 +27,7 @@
       "articleid": {
         "title": "Unique article identifier",
         "description": "Used to uniquely identify a colleciton within your site (for examples, 'First Blog Article')",
-        "type": "integer"
+        "type": "string"
       },
       "checksum": {
         "title": "Collection checksum",
